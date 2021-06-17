@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main()
+{
+	putcha("error is printed by perror");
+	return (0);
+}
