@@ -8,9 +8,9 @@
 int main(void)
 {
 	int i;
-
 	int gap = 2;
-	for (i = 0; i < 90; i++)
+
+	for (i = 1; i < 90; i++)
 	{
 		if (i % 10 == 0)
 		{
