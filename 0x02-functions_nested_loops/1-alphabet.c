@@ -1,9 +1,7 @@
 #include <unistd.h>
 #include "holberton.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (success)
+ *print_alphabet - prints the alphabet in lowercase, followed by a newline
  */
 void print_alphabet(void)
 {
@@ -14,5 +12,4 @@ void print_alphabet(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
-	return;
 }
