@@ -7,14 +7,15 @@
  */
 int _islower(int c)
 {
+	int letter;
+	
 	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('1');
+		letter = 1;
 	}
 	else
 	{
-		_putchar('0');
+		letter = 0;
 	}
-	_putchar('\n');
-	return (0);
+	return (letter);
 }
