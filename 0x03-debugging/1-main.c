@@ -12,7 +12,7 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-	clrscr();
+	/*code*/
 	while (i < /*1*/0)
 	{
 		putchar(i);
