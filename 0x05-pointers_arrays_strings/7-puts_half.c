@@ -19,7 +19,6 @@ void puts_half(char *str)
 			_putchar(str[mid + forward]);
 			forward++;
 		}
-		_putchar('\n');
 	}
 	else if (length != 0)
 	{
