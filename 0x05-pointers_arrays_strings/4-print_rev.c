@@ -8,12 +8,12 @@ void print_rev(char *s)
 {
 	int i;
 
-	int count = 0;
+	int count = 1;
 	int length = strlen(s);
 
-	for (i = 0; i <= length; i++)
+	for (i = 1; i <= length; i++)
 	{
-		_putchar(s[length-count]);
+		_putchar(s[length - count]);
 		count++;
 	}
 	_putchar('\n');
