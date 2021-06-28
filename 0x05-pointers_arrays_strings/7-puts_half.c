@@ -23,7 +23,7 @@ void puts_half(char *str)
 	}
 	else if (length != 0)
 	{
-		int mid = (length - 1) / 2;
+		int mid = (length + 1) / 2;
 
 		for (i = 0; i <= mid; i++)
 		{
