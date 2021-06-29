@@ -10,16 +10,34 @@ void puts2(char *str)
 
 	int length = strlen(str);
 	int count = length;
+	int mod = length % 2;
 
-	for (i = 0; i < length; i++)
+	if (mod == 0)
 	{
-		_putchar(str[length - count]);
-		count = count - 2;
-
-		if (count == 0 || count == 1)
+		for (i = 0; i < length; i++)
 		{
-			break;
+			_putchar(str[length - count]);
+			count = count - 2;
+
+			if (count == 0)
+			{
+				break;
+			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else if (mod != 0)
+	{
+		for (i = 0; i < length; i++)
+		{
+			_putchar(str[length - count]);
+			count = count - 2;
+
+			if (count < 0)
+			{
+				break;
+			}
+		}
+		_putchar('\n');
+	}
 }
