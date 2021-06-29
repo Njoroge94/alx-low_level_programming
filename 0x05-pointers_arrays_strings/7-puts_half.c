@@ -21,14 +21,15 @@ void puts_half(char *str)
 		}
 		_putchar('\n');
 	}
-	else if (length != 0)
+	else if (length % 2 != 0)
 	{
-		int mid = (length + 1) / 2;
+		int mid = (length - 1) / 2;
+		int oddforward = 1;
 
 		for (i = 0; i < mid; i++)
 		{
-			_putchar(str[mid + forward]);
-			forward++;
+			_putchar(str[mid + oddforward]);
+			oddforward++;
 		}
 		_putchar('\n');
 	}
