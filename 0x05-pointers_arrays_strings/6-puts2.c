@@ -16,7 +16,7 @@ void puts2(char *str)
 		_putchar(str[length - count]);
 		count = count - 2;
 
-		if (count == 0)
+		if (count == 0 || count == 1)
 		{
 			break;
 		}
