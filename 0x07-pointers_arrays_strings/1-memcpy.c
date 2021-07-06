@@ -9,8 +9,8 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *theDest = dest;
-	char *theSrc = src;
+	char *theDest = (char *)dest;
+	const char *theSrc = (const char *)src;
 
 	if ((theDest != NULL) && (theSrc != NULL))
 	{
@@ -20,5 +20,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 			--n;
 		}
 	}
-	return (theDest);
+	return (dest);
 }
