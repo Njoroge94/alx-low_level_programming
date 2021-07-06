@@ -12,8 +12,7 @@ char *_strchr(char *s, char c)
 
 	if (s != NULL)
 	{
-		do
-		{
+		do {
 			if (*s == c)
 			{
 				isCharFound = s;
