@@ -1,5 +1,4 @@
 #include <string.h>
-#include <stdio.h>
 #include "holberton.h"
 /**
  *_strchr - scan for a character in a string
@@ -9,10 +8,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	if (*s == c)
-	{
-		return (s);
-	} while (*s++);
+	char *isCharFound = NULL;
 
-	return (0);
+	if (s != NULL)
+	{
+		do
+		{
+			if (*s == c)
+			{
+				isCharFound = s;
+				break;
+			}
+		} while (*s++);
+	}
+	return (isCharFound);
 }
