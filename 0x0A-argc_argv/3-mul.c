@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		for(i = 1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			mult = mult * atoi(argv[i]);
 		}
@@ -22,5 +22,5 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 	}
-	return 0;
+	return (0);
 }
