@@ -15,16 +15,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i]))
-			{
-				sum += atoi(argv[i]);
-			}
-		        else
-			{
-				printf("Error\n");
-		        }
-		        printf("%d\n", sum);
+			sum += atoi(argv[i]);
 		}
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("%d\n", 0);
 	}
 	return (0);
 }
