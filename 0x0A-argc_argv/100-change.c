@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (amt >= changes [j])
+			if (amt >= changes[j])
 			{
-			        coin = amt / changes[j];
+				coin = amt / changes[j];
 				rem = amt % changes[j];
 				amt = rem;
 				total += coin;
