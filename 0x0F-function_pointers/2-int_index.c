@@ -20,15 +20,15 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; i++)
 		{
-			if (isdigit(array[i]))
-				{
-					cmp(array[i]);
-				}
-				/**while (i < size)
-		*{
-		*	cmp(isdigit(array[i]));
-		*	i++;*/
+			if (!isdigit(array[i]))
+			{
+				cmp(array[i]);
+			}
+			else
+			{
+				return (-1);
+			}
 		}
 	}
-	return (cmp(array[i]));
+	return (i/10);
 }
