@@ -14,7 +14,8 @@ int sum_them_all(const unsigned int n, ...)
 	if (n != 0)
 	{
 		va_list intArgPointer;
-		va_start (intArgPointer, n);
+
+		va_start(intArgPointer, n);
 
 		for (i = 0; i < (int)n; i++)
 			nSum += va_arg(intArgPointer, int);
