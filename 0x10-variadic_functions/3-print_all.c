@@ -10,13 +10,13 @@ void print_all(const char * const format, ...)
 	char *str;
 	int numbers;
 	float f;
-	char ch;
+	int ch;
 	int i = 0;
 
 	va_list(anything);
 	va_start(anything, format);
 
-	while (i < va_arg(anything, int))
+	while (*format != NULL)
 	{
 		if (*format == 'i')
 		{
@@ -46,7 +46,7 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 			}
 		}
-		++i;
+		++format;
 	}
 	va_end(anything);
 	putchar('\n');
