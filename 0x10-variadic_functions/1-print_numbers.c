@@ -5,7 +5,7 @@
 #include "variadic_functions.h"
 /**
  *print_numbers - printing integers
- *@sparator: comma
+ *@separator: comma
  *@n: number of integers passed to the function
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
